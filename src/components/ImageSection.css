@@ -1,0 +1,108 @@
+.new-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+  }
+  
+  .image-block {
+    border-radius: 0px;
+    text-align: center;
+    flex: 0 0 calc(33.33% - 20px);
+  }
+  
+  .image-block img {
+    max-height: 325px;
+    max-width: 90%;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    background: linear-gradient(to bottom, #ffd700, white);
+  }
+  
+  .image-block:hover img {
+    transform: scale(1.1);
+    border-color: #ffd700;
+  }
+  
+  .p-1 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin: 10px;
+    font-size: 22px;
+    color: antiquewhite;
+  }
+
+  .p-1-title {
+    margin-top: 15px;
+    margin-bottom: 80px;
+    font-size: 25px ;
+    font-weight: bold;
+    color: #ffd700;
+  }
+  
+  /* Adicione outras estilizações conforme necessário */
+  @media screen and (max-width: 768px) {
+
+    .p-1-title{
+      font-size: 18px;
+    }
+
+    .p-1 {
+      margin-top: 10px;
+      font-size: 14px;
+      margin-bottom: 50px;
+      color: antiquewhite;
+    }
+
+    .new-content {
+      display: block; /* Altera para exibição em bloco */
+      padding: 20px; /* Reduz o espaçamento interno no mobile */
+    }
+  
+    .image-block {
+      margin-bottom: 20px; /* Adiciona espaçamento entre os blocos */
+      margin-top: -20px;
+    }
+    
+
+    .image-block img {
+      max-height: 250px;
+      max-width: 90%;
+      border-radius: 200px;
+      transition: transform 0.3s ease;
+      border: 2px solid transparent;
+      background: linear-gradient(to bottom, #ffd700, white);
+    }
+
+    .link-no-underline {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Maintain text color */
+    }
+  }
+  @media screen and (min-width: 769px) {
+
+  .link-no-underline {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Maintain text color */
+  }
+
+  .new-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .image-block {
+    flex: 0 0 calc(20% - 5px); /* Para 2 imagens por linha no desktop */
+    margin-bottom: 20px;
+  }
+
+  /* Restante das regras de estilo para o desktop */
+  .image-block img {
+    max-height: 325px;
+  }
+}

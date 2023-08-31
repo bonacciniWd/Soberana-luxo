@@ -1,0 +1,85 @@
+.header {
+  background-color: #F6ebda;
+  color: #008000;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.desktop-logo {
+  width: 200px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 20px;
+  margin-right: 0px;
+}
+
+/* Estilização do link de navegação */
+.nav-links a {
+  text-decoration: none;
+  color: #517251;
+  font-weight: bolder;
+  text-transform: uppercase;
+  transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.nav-links a:hover {
+  color: #ffdd00; /* Cor ao passar o mouse */
+}
+
+/* Adicione um media query para dispositivos menores */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 70px; /* Reduz a altura no mobile */
+  }
+
+  .desktop-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: block;
+    width: 120px;
+  }
+
+  .nav-links li {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    margin-right: 40px; /* Adicione 'px' após o valor */
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+/* Estilos para o componente Main */
+.main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 10vh; /* Defina a altura da viewport */
+    overflow:scroll;
+  }
+  
+  .video-bg {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  @media screen and (min-width: 768px) {
+    .h1 {
+      font-size: 36px; /* Tamanho do texto h1 em desktops */
+    }
+  
+    .p {
+      font-size: 20px; /* Tamanho do texto p em desktops */
+    }
+  }

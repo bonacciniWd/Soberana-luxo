@@ -1,0 +1,53 @@
+/* Estilos padrão para o botão flutuante do WhatsApp */
+.wpp-btn {
+  position: fixed;
+  bottom: 25px; /* Espaço a partir da borda inferior */
+  right: 25px; /* Espaço a partir da borda direita */
+  background-color: #25d366; /* Cor de fundo do botão */
+  border-radius: 50%; /* Forma circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  z-index: 99999; /* Para ficar acima de outros elementos */
+  transition: background-color 0.3s ease; /* Transição suave da cor */
+}
+
+/* Estilos para o ícone do WhatsApp */
+.wpp-icon {
+  width: 97%; /* O ícone sempre preencherá o botão */
+  height: auto;
+  animation: pulse 2s infinite; /* Animação de pulsação */
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Efeito de hover para o botão */
+.wpp-btn:hover {
+  background-color: #0b3a13; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .wpp-btn {
+    width: 45px; /* Tamanho do botão em dispositivos móveis */
+    height: 45px;
+  }
+}
+
+/* Estilos para desktops */
+@media screen and (min-width: 768px) {
+  .wpp-btn {
+    width: 70px; /* Tamanho do botão em desktops */
+    height: 70px;
+    bottom: 50px;
+    right: 50px;
+  }
+}
