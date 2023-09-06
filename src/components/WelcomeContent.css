@@ -1,6 +1,6 @@
 @media screen and (min-width: 769px) {
 .content {
-  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 60px;
   text-align: center;
   display:row;
   justify-content:center;
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 768px) {
   .content {
-    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 25px;
     text-align: center;
     display:row;
     justify-content:center;

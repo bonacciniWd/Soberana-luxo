@@ -30,7 +30,9 @@ const Main = () => {
       <WelcomeContent />
       <ImageSection /> 
       <ArtGallery />
-      <Info />
+      <div className="info mobile-info">
+        <Info />
+      </div>
       <Wppbtn />
       <Footer />
     </div>

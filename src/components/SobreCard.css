@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+        .map {
+            border-radius: 10px;
+            border: 1px solid #ffd700;
+            height: 180px;
+            width: auto;
+            margin: 8px;
+        }
+
+        .tilt-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .blue-text {
+            color: blue; /* Defina a cor desejada, por exemplo, azul */
+            transition: color 0.3s ease; /* Adiciona uma transição suave de cor */
+        }
+
+        .blue-text:hover {
+        color: #095e09; /* Define a cor verde desejada */
+        }
+        
+        .contact-card {
+            background-color:  #F6ebda;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 50px;
+            max-width: 300px;
+            border: 2px solid  #ffd700;
+        }
+        
+        .contact-card h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+}     
+
+@media screen and (min-width: 769px) {
+
+    .map {
+        border-radius: 10px;
+        border: 1px solid #ffd700;
+        height: 90%;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .tilt-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    .blue-text {
+        color: blue; /* Defina a cor desejada, por exemplo, azul */
+        transition: color 0.3s ease; /* Adiciona uma transição suave de cor */
+    }
+
+    .blue-text:hover {
+    color: #095e09; /* Define a cor verde desejada */
+    }
+
+    .contact-card {
+        /* Estilos gerais do cartão */
+        background-color:  #F6ebda;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 900px; /* Ajuste a largura máxima desejada */
+        width: 80%; /* Defina uma largura percentual desejada */
+        margin: 0 auto; /* Centralize horizontalmente */
+      
+    }
+        .contact-card h2 {
+            /* Estilos do título */
+            font-size: 2.6rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+          
+
+        .contact-card p {
+            /* Estilos do parágrafo de texto */
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+}   

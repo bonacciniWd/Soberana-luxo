@@ -1,15 +1,32 @@
 /* Estilos para o componente Main */
-.main {
-    display: flex;
-    flex-direction: column;
-  }
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  /* Outros estilos para telas menores */
   
+  .mobile-info {
+    display: flex;
+  }
+}
+
+.main {
+  height: 100vh; /* 100% da altura da janela */
+  width: 100vw; /* 100% da largura da janela */
+  position: relative; /* Garante que o conteúdo fique dentro do .main */
+}
+
   
   .video-container {
     position: relative;
     width: 100%;
     height: 10vh; /* Defina a altura da viewport */
-    overflow:scroll;
   }
   
   .video-bg {
