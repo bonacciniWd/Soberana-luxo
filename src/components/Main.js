@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Main.css';
+import videoUrl from '../components/assets/fundo-soberana.mp4';
 import ImageSection from './ImageSection';
 import ArtGallery from './ArtGallery';
 import Info from './Info';
@@ -7,18 +8,27 @@ import Footer from './Footer';
 import Wppbtn from './Wppbtn';
 import WelcomeContent from './WelcomeContent';
 
-// Importe o seu arquivo GIF aqui
-import backgroundGif from '../components/assets/fundo.gif';
-
 const Main = () => {
+  useEffect(() => {
+    // Seleciona o elemento de vídeo após o componente ser montado
+    const video = document.querySelector('.video-bg');
+
+    // Desativa o som após o vídeo ser carregado e iniciado
+    video.addEventListener('canplaythrough', () => {
+      video.muted = true;
+    });
+  }, []);
+
   return (
     <div className="main">
-      {/* Use o arquivo GIF como fundo */}
       <div className="video-container">
-        <img className="video-bg" src={backgroundGif} alt="Background" />
+        <video className="video-bg" autoPlay muted loop playsInline>
+          <source src={videoUrl} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <WelcomeContent />
-      <ImageSection />
+      <ImageSection /> 
       <ArtGallery />
       <Info />
       <Wppbtn />
