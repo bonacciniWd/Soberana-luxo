@@ -2,7 +2,7 @@
         .map {
             border-radius: 10px;
             border: 1px solid #ffd700;
-            height: 180px;
+            height: 160px;
             width: auto;
             margin: 8px;
         }
@@ -101,4 +101,12 @@
             margin-bottom: 15px;
         }
 
+        
+        .white-text {
+          color: white; /* Define a cor do texto como branco */
+        }
+        
+        .text-center {
+          text-align: center; /* Centraliza o texto horizontalmente */
+        }
 }   

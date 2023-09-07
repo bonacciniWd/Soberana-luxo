@@ -38,17 +38,16 @@ const ContactCard = () => {
           Nossa loja física está localizada na<br />
           <span className="blue-text">Rua Duque de Caxias, 557 sala 01 Bairro Vila Operária em Itajaí.</span>
         </p>
-        <p>Nosso horário de atendimento é das 10h às 12h e das 13h30 às 19h.<br />ㅤ</p>
         <Link to="https://www.google.com/maps/place/Soberana+Acess%C3%B3rios+de+Luxo+-+Rua+Duque+de+Caxias,+sala+01+-+Vila+Operaria,+Itaja%C3%AD+-+SC/@-26.9551952,-48.7410972,13z/data=!4m5!3m4!1s0x94d8cda8290529a3:0x3854b2d8a5b6c543!8m2!3d-26.9121902!4d-48.6732556?entry=ttu" target="_blank"> 
-            <Tilt className="tilt-container" options={{ max: 25 }}> 
+            
             <img
                 src={mapDesktop}
-                sizes="(max-width: 768px) 100vw, 50vw"
-                alt="Map"
                 className="map"
             />
-            </Tilt>
+           
         </Link>    
+        <p>Nosso horário de atendimento é das 10h às 12h e das 13h30 às 19h.<br />ㅤ</p>
+        
       </div>
     </div>
   );
