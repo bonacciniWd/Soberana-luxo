@@ -4,8 +4,8 @@ const ArtGallery = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    const accessToken = "IGQWRPNnFHZAEl4SjdEa3ZAiRkhaeExPbHJ4dm53UDNBOTh1UTBGbFVUemp0LXZAOTjlNc0duQVFwWHVVWUlVLVZAQRGpCVFlvRmc5SmNRYUhIWF9jckozSGl1eHdNLXZALT2tySF9od3lxaFBMZAEZAfbTk4YWxfbXZATeWcZD";
-    const userId = "4912608515529549";
+    const accessToken = process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN;
+    const userId = process.env.REACT_APP_INSTAGRAM_USER_ID;
 
     fetch(`https://graph.instagram.com/v12.0/${userId}/media?access_token=${accessToken}`)
       .then((response) => response.json())

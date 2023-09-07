@@ -48,6 +48,10 @@ const ContactCard = () => {
          <FaInstagram style={{color:'#E4405F'}} className="whatsapp-icon"/>  Instagram <br />
            <span className="blue-text">@soberana.luxo</span> 
         </p>
+        <p>
+         <FaInstagram style={{color:'#E4405F'}} className="whatsapp-icon"/>  Exclusão de dados <br />
+           <span className="blue-text">Página de exclusão</span> 
+        </p>
       </div>
     </div>
     
