@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Main.css';
 import videoUrl from '../components/assets/fundo-soberana.mp4';
 import ImageSection from './ImageSection';
-import ArtGallery from './ArtGallery';
+import InstagramCarousel from './InstagramCarousel';
 import Info from './Info';
 import Footer from './Footer';
 import Wppbtn from './Wppbtn';
@@ -29,7 +29,8 @@ const Main = () => {
       </div>
       <WelcomeContent />
       <ImageSection /> 
-      <ArtGallery />
+      <InstagramCarousel />
+
       <div className="info mobile-info">
         <Info />
       </div>
