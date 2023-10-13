@@ -10,6 +10,7 @@
     border-radius: 0px;
     text-align: center;
     flex: 0 0 calc(33.33% - 20px);
+    
   }
   
   .image-block img {
@@ -19,6 +20,7 @@
     transition: transform 0.3s ease;
     border: 2px solid transparent;
     background: linear-gradient(to bottom, #ffd700, white);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Sombra de texto */
   }
   
   .image-block:hover img {
@@ -32,6 +34,7 @@
     margin: 10px;
     font-size: 22px;
     color: antiquewhite;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
   }
 
   .p-1-title {
@@ -40,6 +43,7 @@
     font-size: 25px ;
     font-weight: bold;
     color: #ffd700;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
   }
   
   /* Adicione outras estilizações conforme necessário */

@@ -23,10 +23,10 @@ const InstagramCarousel = () => {
   }, [instagramFeeds.length]);
 
   return (
-    <div className="instagram-carousel">
-      <div className="carousel">
-        <h1 className="text">GALERIA</h1>
-      <p className="description">Deslize para à esquerda ⇽</p>
+    <div className="instagram-carouseli">
+      <div className="carouseli">
+        <h1 className="texti">GALERIA</h1>
+      <p className="descriptioni">Deslize para à esquerda ⇽</p>
         <Carousel infiniteLoop autoPlay interval={10000}>
           {instagramFeeds.map((feedUrl, index) => (
             <div key={index}>

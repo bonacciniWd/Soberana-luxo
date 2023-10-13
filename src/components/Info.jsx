@@ -1,3 +1,5 @@
+/*/ COMPONENTE INFO = TOUR VIRTUAL /*/
+
 import React from 'react';
 import './Info.css'; // Import your CSS file for styling
 import {FcSlrBackSide} from 'react-icons/fc';
@@ -13,9 +15,6 @@ const Info = () => {
       <div>
       <iframe
         title="Tour Virtual da Soberana Acessórios de Luxo"
-        width="95%"
-        height="563"
-        frameborder="10"
         allowfullscreen
         src="https://tourmkr.com/F1g0P5rL3w"
       ></iframe>

@@ -16,7 +16,7 @@ const ImageSection = () => {
               <Tilt options={{ max: 25 }}>
                  <img src={Imagem} alt="Nova Imagem" />
               </Tilt>
-              <p className="p-1-title">Noiva</p>
+              <p className="p-1-title">NOIVA</p>
             </Link>
           </div>
 
@@ -24,7 +24,7 @@ const ImageSection = () => {
       <Tilt options={{ max: 25 }}>   
         <Link to="/formanda" className="link-no-underline">  
             <img src={Imagem2} alt="Nova Imagem" />
-            <p className="p-1-title">Formanda</p>
+            <p className="p-1-title">FORMANDA</p>
         </Link>
       </Tilt>  
       </div>
@@ -33,7 +33,7 @@ const ImageSection = () => {
         <Tilt options={{ max: 25 }}>
           <Link to="/convidada" className="link-no-underline"  >
             <img src={Imagem3} alt="Nova Imagem" />
-            <p className="p-1-title">Convidada</p>
+            <p className="p-1-title">CONVIDADA</p>
           </Link>
         </Tilt>  
       </div>
@@ -42,7 +42,7 @@ const ImageSection = () => {
        <Tilt options={{ max: 25}}>
         <Link to="/15anos" className="link-no-underline"  > 
           <img src={Imagem4} alt="Nova Imagem" />
-          <p className="p-1-title">15 Anos</p>
+          <p className="p-1-title">15 ANOS</p>
         </Link>
        </Tilt> 
       </div>
@@ -51,7 +51,7 @@ const ImageSection = () => {
        <Tilt options={{ max: 25}}>   
           <Link to="/ensaio" className="link-no-underline"  >  
             <img src={Imagem5} alt="Nova Imagem" />
-            <p className="p-1-title">Ensaio fotográfico</p>
+            <p className="p-1-title">ENSAIO FOTOGRÁFICO</p>
           </Link>
        </Tilt>
       </div>

@@ -11,6 +11,8 @@
   top: 0;
   left: 0;
   z-index: 9999999;
+  border-bottom: 0.5px solid #034803;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
 
 .mobile-logo {
@@ -50,6 +52,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   transition: color 0.3s ease; /* Transição suave da cor */
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.8);
 }
 
 .nav-links a:hover {

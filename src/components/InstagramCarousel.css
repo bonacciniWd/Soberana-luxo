@@ -1,53 +1,116 @@
-/* Estilo do container do carrossel */
-.carousel {
-  border-radius: 15px; /* Borda arredondada do carrossel */
-  overflow: hidden; /* Ocultar conteúdo que transborda dos slides */
-}
-
-/* Estilo do container do carrossel */
-.instagram-carousel {
-  max-width: 95%; /* Largura máxima do carrossel */
-  margin: 0 auto; /* Centralizar o carrossel horizontalmente */
-  max-height: 900px; /* Altura máxima automática */
-}
-
-/* Estilo dos slides individuais */
-.carousel .slide {
-  background-color: #0e0e0e5b; /* Cor de fundo dos slides */
-  padding: 10px; /* Espaçamento interno dos slides */
-  text-align: center;
-  width: 100%; /* Preencher todo o carrossel horizontalmente */
-  max-height: 750px; /* Defina a altura máxima desejada para os slides */
-  display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
-  align-items: center; /* Centralizar verticalmente */
-}
-
-/* Estilo do iframe dentro dos slides */
-.carousel .slide iframe {
-  max-width: 100%; /* Preencher todo o slide horizontalmente */
-  height: 600px; /* Preencher todo o slide verticalmente */
-  border: none; /* Remover a borda do iframe */
-  border-radius: 15px; /* Borda arredondada */
-}
-
-.carousel .text {
-  font-size:24pt !important ;
-  color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
-  
-}
-.carousel .description {
-  color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
-  animation: pulseRight 1s infinite alternate;
-}
-
-@keyframes pulseRight {
-  0% {
-    transform: translateX(0); /* Posição inicial */
+@media (max-width: 768px) {
+  /* Estilo do container do carrossel */
+  .carousel {
+    border-radius: 15px; /* Borda arredondada do carrossel */
   }
-  100% {
-    transform: translateX(10px); /* Posição final (pode ajustar conforme necessário) */
+  .Footer {
+    display: none;
   }
-}
+
+  /* Estilo do container do carrossel */
+  .instagram-carouseli {
+    max-width: 100%; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centralizar o carrossel horizontalmente */
+    max-height: 900px; /* Altura máxima automática */
+  }
+
+  /* Estilo dos slides individuais */
+  .carouseli .slide {
+    background-color: #0e0e0e5b; /* Cor de fundo dos slides */
+    padding: 10px; /* Espaçamento interno dos slides */
+    text-align: center;
+    width: 100%; /* Preencher todo o carrossel horizontalmente */
+    max-height: 750px; /* Defina a altura máxima desejada para os slides */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+  }
+
+  /* Estilo do iframe dentro dos slides */
+  .carouseli .slide iframe {
+    max-width: 98%; /* Preencher todo o slide horizontalmente */
+    height: 600px; /* Preencher todo o slide verticalmente */
+    border: 2px solid #ffd700; /* Remover a borda do iframe */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .carouseli .texti {
+    font-size:24pt !important ;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    padding: 10px 15px;
+    
+  }
+  .carouseli .descriptioni {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    animation: pulseRight 1s infinite alternate;
+    padding: 10px 15px;
+  }
+
+  @keyframes pulseRight {
+    0% {
+      transform: translateX(0); /* Posição inicial */
+    }
+    100% {
+      transform: translateX(10px); /* Posição final (pode ajustar conforme necessário) */
+    }
+  }
+}  
+
+@media (min-width: 769px) {
+  /* Estilo do container do carrossel */
+  .carousel {
+    border-radius: 15px; /* Borda arredondada do carrossel */
+  }
+
+  /* Estilo do container do carrossel */
+  .instagram-carouseli {
+    max-width: 60%; /* Largura máxima do carrossel */
+    margin: 0 auto; /* Centralizar o carrossel horizontalmente */
+    
+  }
+
+  /* Estilo dos slides individuais */
+  .carouseli .slide {
+    background-color: #0e0e0e5b; /* Cor de fundo dos slides */
+    padding: 10px; /* Espaçamento interno dos slides */
+    text-align: center;
+    width: 90%; /* Preencher todo o carrossel horizontalmente */
+    max-height: auto; /* Defina a altura máxima desejada para os slides */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+  }
+
+  /* Estilo do iframe dentro dos slides */
+  .carouseli .slide iframe {
+    max-width: 50%; /* Preencher todo o slide horizontalmente */
+    min-height: 100%;
+    border: 2px solid #ffd700; /* Remover a borda do iframe */
+    border-radius: 15px; /* Borda arredondada */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  .carouseli .texti {
+    font-size:24pt !important ;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    padding: 10px 15px;
+    
+  }
+  .carouseli .descriptioni {
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+    animation: pulseRight 1s infinite alternate;
+    padding: 10px 15px;
+  }
+
+  @keyframes pulseRight {
+    0% {
+      transform: translateX(0); /* Posição inicial */
+    }
+    100% {
+      transform: translateX(10px); /* Posição final (pode ajustar conforme necessário) */
+    }
+  }
+}  

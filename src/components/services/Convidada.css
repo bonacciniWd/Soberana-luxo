@@ -7,7 +7,7 @@
     text-align: center;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px 80px; /* Adjust vertical and horizontal padding */
+    padding: 50px 100px; /* Adjust vertical and horizontal padding */
   }
   
   
@@ -43,6 +43,7 @@
     margin-bottom: 20px; /* Increase margin-bottom for more spacing from the edge */
     font-size: 24px;
     color: antiquewhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
   }
 
   .c-1-title {
@@ -50,18 +51,65 @@
     font-size: 28px ;
     font-weight: bold;
     color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
   }
 
   
   @media screen and (max-width: 768px) {
 
+    
+    .carousel {
+     -ms-overflow-style: none; /* IE 10+ */
+      scrollbar-width: none; /* Firefox */
+      overflow-x: scroll;
+      display:flex;
+    }
+    .carousel::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+    
+    .carousel-item {
+      flex: 0 0 350px;
+      height: 500px;
+      scroll-snap-align: start;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+    }
+    
+    .carousel-item img {
+      max-width: 90%;
+      max-height: 100%;
+      border-radius: 5px;  
+      margin-left: 25px;
+      border: 2px solid transparent;
+      background: linear-gradient(to bottom, #ffd700, white);
+    }
+    
+    .text {
+      background: linear-gradient(to right, #ffd700, #c0c0c0);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-left: 25px;
+    }
+  
+    .description {
+      overflow: hidden;
+      white-space: break-spaces;
+      margin-left: 25px;
+      margin-top: -10px;
+      color: white;
+      font-size: medium;
+      animation: stretchTextDesktop 2s infinite alternate;
+    }
+  
+
     .c-1-title{
-      font-size: 18px;
+      font-size: 20px;
     }
 
     .c-1 {
       margin-top: 10px;
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 25px;
       color: antiquewhite;
     }
@@ -73,7 +121,14 @@
   
     .image-bl {
       margin-bottom: 20px; /* Adiciona espaçamento entre os blocos */
-      margin-top: 20px;
+      margin-top: 90px;
+      padding: 10px;
+    }
+
+    .image-bla {
+      margin-bottom: 20px; /* Adiciona espaçamento entre os blocos */
+      margin-top: 60px;
+      padding: 10px;
     }
     
     .whatsapp-logo {
@@ -118,3 +173,5 @@
 
     
   }
+
+  

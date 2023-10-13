@@ -8,6 +8,7 @@
 
     .whatsapp-icon {
     margin-bottom: -2px;
+    
     }
     
     .contact-button {
@@ -15,18 +16,20 @@
       color: #ffffff;
       border: 1px solid black;
       text-align: center;
-      border-radius: 30px; 
+      padding: 8px;
+      border-radius: 15px; 
       text-transform: uppercase;
       cursor: pointer;
       transition: background-color 0.3s ease;
       align-items: center; /* Align items horizontally */
+      animation: pulse 2s infinite;
     }
 
     .contact-button a {
       text-decoration: none; /* Remove sublinhado */
       color: inherit; /* Use a cor padrão do elemento pai (cor do ícone) */
-      padding: 5px;
-      font-size: 13px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+      font-size: 16px;
     }
     
     .contact-button:hover {
@@ -52,16 +55,32 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
       align-items: center; /* Align items horizontally */
+      animation: pulse 2s infinite; /* Inicia a animação 'pulse' e a repete infinitamente */
     }
+    
+   
 
     .contact-button a {
       text-decoration: none; /* Remove sublinhado */
       color: inherit; /* Use a cor padrão do elemento pai (cor do ícone) */
       padding: 10px;
       font-size: 18px;
+      font-weight: bolder;
     }
     
     .contact-button:hover {
       background-color: #e5bf00;
+    }
+  }
+   /*/ EFEITO PULSE NO BOTÃO DE CONTATO/*/
+   @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+    100% {
+      transform: scale(1);
     }
   }
