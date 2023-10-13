@@ -9,6 +9,7 @@
   text-align: center;
 }
 
+
 .nav-li {
   list-style: none;
   padding: 5px;
@@ -20,6 +21,7 @@
   border-top: 1px solid #008000;
   border-left: 1px solid #008000;
   border-right: 1px solid #008000;
+  border-radius: 5px;
 }
 
 .nav-li li {
@@ -30,8 +32,10 @@
   color: rgb(7, 7, 7);
   text-decoration:none;
   text-transform: uppercase;
+  font-weight:bold;
   color: #008000;
   transition: color 0.3s; 
+  text-shadow: 0.5px 0.5px 0.8px rgba(0, 0, 0, 0.6);
 }
 
 /* Change color on hover to the same golden color */
@@ -39,14 +43,33 @@
   color: #ffd700;
 }
 
+/* Define a animação para o pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+
 .logo-1 img {
   width: 40px; /* Tamanho da logo em mobile */
   height: 40px;
   margin: 20px 0;
+  animation: pulse 2s infinite;
+  
 }
 
-@media screen and (min-width: 768px)  { 
+
+
+@media screen and (min-width: 769px)  { 
   .nav-li {
     font-size: 22px;
   }
 }
+

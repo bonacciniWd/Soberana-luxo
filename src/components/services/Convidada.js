@@ -26,9 +26,14 @@ useEffect(() => {
   };
 }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+const handleVideoClick = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+};
+
 
   return (
-    <div className="main">
+    <div className="main"  onClick={handleVideoClick}>
       <div className="video-container">
         <video className="video-bg" autoPlay muted loop>
           <source src={videoUrl} type="video/mp4" />

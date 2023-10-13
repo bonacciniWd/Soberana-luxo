@@ -2,6 +2,7 @@
     .blue-text {
         color: blue; /* Defina a cor desejada, por exemplo, azul */
         transition: color 0.3s ease; /* Adiciona uma transição suave de cor */
+        text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.6);
     }
 
      .foto {
@@ -23,10 +24,10 @@
     }
     
     .contact-card {
-        background-color:  #F6ebda;
+        background-color:  #f6ebdabd;
         padding: 10px;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
         text-align: center;
         margin-top: 60px;
         width: 400px;
@@ -35,8 +36,9 @@
     
     .contact-card h2 {
         font-size: 1.5rem;
-        color: #333;
+        color: #ffd700;
         margin-bottom: 10px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
     }
     
     .contact-card p {
