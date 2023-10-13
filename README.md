@@ -1,4 +1,4 @@
-# Soberana Luxo - Aluguel de Joias
+# Soberana Luxo - Aluguel de Joias 💍👸
 
 Bem-vindo ao repositório do projeto Soberana Luxo, o seu destino premium para aluguel de joias deslumbrantes. Aqui, você encontrará informações importantes sobre como configurar, desenvolver e implantar nosso aplicativo React.
 
