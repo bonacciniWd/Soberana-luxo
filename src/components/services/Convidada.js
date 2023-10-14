@@ -43,13 +43,13 @@ const handleVideoClick = (e) => {
       <div className="overlay"></div> {/* Add an overlay element */}
       <div className="content">
         <div className="image-bl">
-          <img src={Imagem} alt="Nova Imagem" /> 
+          <img src={Imagem} alt="Nova Imagem" loading="lazy" /> 
           <p className="c-1-title">CONVIDADA</p>  
           <p className="c-1">A vida não tem replay, por isso precisamos contemplar todos os momentos felizes e marcantes de nossas vidas.</p>
           <p className="c-1"> Um evento especial fica marcado para sempre em nossa memória, por isso todos os detalhes são importantes para torná-lo ainda mais inesquecível.</p>
           <p className="c-1">Nossos acessórios trazem beleza e sofisticação ao look, tornando a produção ainda mais linda e memorável.</p>
-          <ContactButton message="Olá! eu gostei" />
-        </div>
+          <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Convidada e (ou) Madrinha." />
+        </div> 
       </div>  
       <div className="art-gallery">
         <h1 className="text">GALERIA</h1>
@@ -57,7 +57,7 @@ const handleVideoClick = (e) => {
         <div className="carousel">
             {images.map((image, index) => (
             <div key={index} className="carousel-item">
-                <img src={image} alt={`Imagem ${index + 1}`} />
+                <img src={image} alt={`Imagem ${index + 1}`} loading="lazy" />
             </div>
             ))}
         </div>

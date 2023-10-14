@@ -28,9 +28,14 @@ useEffect(() => {
   };
 }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+const handleVideoClick = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+};
+
 
   return (
-    <div className="main">
+    <div className="main"  onClick={handleVideoClick}>
       <div className="video-container">
         <video className="video-bg" autoPlay muted loop>
           <source src={videoUrl} type="video/mp4" />
@@ -39,10 +44,10 @@ useEffect(() => {
       </div>
       <div className="new-cont">
         <div className="image-bl">
-          <img src={Imagem} alt="Nova Imagem" /> 
+          <img src={Imagem} alt="Nova Imagem" loading="lazy"/> 
           <p className="c-1-title">Formanda</p>  
           <p className="c-1">Sabemos que a Formatura é um março significativo na sua vida profissional, é um momento de celebração e reconhecido de todo o esforço e dedicação ao longo dos últimos anos. <br/> Acreditamos que os detalhes fazem toda a diferença em ocasiões tão memoráveis, por isso oferecemos um seleção exclusiva de acessórios elegantes e sofisticados, perfeitos para realçar a sua beleza e completar seus looks de formatura.</p>
-          <ContactButton />
+          <ContactButton message="Olá, vim através do site da Soberana, gostaria de mais informações sobre os serviços voltados à formaturas." />
         </div>
       </div>  
       <div className="art-gallery">
@@ -51,7 +56,7 @@ useEffect(() => {
         <div className="carousel">
             {images.map((image, index) => (
             <div key={index} className="carousel-item">
-                <img src={image} alt={`Imagem ${index + 1}`} />
+                <img src={image} alt={`Imagem ${index + 1}`} loading="lazy" />
             </div>
             ))}
         </div>

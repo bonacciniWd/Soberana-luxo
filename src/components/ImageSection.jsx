@@ -14,7 +14,7 @@ const ImageSection = () => {
           <div className="image-block">
             <Link to="/noiva" className="link-no-underline">
               <Tilt options={{ max: 25 }}>
-                 <img src={Imagem} alt="Nova Imagem" />
+                 <img src={Imagem} alt="Nova Imagem" loading="lazy" />
               </Tilt>
               <p className="p-1-title">NOIVA</p>
             </Link>
@@ -23,7 +23,7 @@ const ImageSection = () => {
       <div className="image-block" href="/formanda">
       <Tilt options={{ max: 25 }}>   
         <Link to="/formanda" className="link-no-underline">  
-            <img src={Imagem2} alt="Nova Imagem" />
+            <img src={Imagem2} alt="Nova Imagem" loading="lazy" />
             <p className="p-1-title">FORMANDA</p>
         </Link>
       </Tilt>  
@@ -32,7 +32,7 @@ const ImageSection = () => {
       <div className="image-block" href="/convidada">
         <Tilt options={{ max: 25 }}>
           <Link to="/convidada" className="link-no-underline"  >
-            <img src={Imagem3} alt="Nova Imagem" />
+            <img src={Imagem3} alt="Nova Imagem" loading="lazy" />
             <p className="p-1-title">CONVIDADA</p>
           </Link>
         </Tilt>  
@@ -41,7 +41,7 @@ const ImageSection = () => {
       <div className="image-block">
        <Tilt options={{ max: 25}}>
         <Link to="/15anos" className="link-no-underline"  > 
-          <img src={Imagem4} alt="Nova Imagem" />
+          <img src={Imagem4} alt="Nova Imagem" loading="lazy" />
           <p className="p-1-title">15 ANOS</p>
         </Link>
        </Tilt> 
@@ -50,7 +50,7 @@ const ImageSection = () => {
       <div className="image-block" href="/ensaio">
        <Tilt options={{ max: 25}}>   
           <Link to="/ensaio" className="link-no-underline"  >  
-            <img src={Imagem5} alt="Nova Imagem" />
+            <img src={Imagem5} alt="Nova Imagem" loading="lazy" />
             <p className="p-1-title">ENSAIO FOTOGRÁFICO</p>
           </Link>
        </Tilt>

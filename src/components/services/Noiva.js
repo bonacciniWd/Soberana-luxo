@@ -27,8 +27,14 @@ useEffect(() => {
   };
 }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+const handleVideoClick = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+};
+
+
   return (
-    <div className="main">
+    <div className="main"  onClick={handleVideoClick}>
       <div className="video-container">
         <video className="video-bg" autoPlay muted loop>
           <source src={videoUrl} type="video/mp4" />
@@ -37,10 +43,10 @@ useEffect(() => {
       </div>
       <div className="new-cont">
         <div className="image-bl">
-          <img src={Imagem} alt="Nova Imagem" /> 
+          <img src={Imagem} alt="Nova Imagem" loading="lazy" /> 
           <p className="c-1-title">NOIVA</p>  
           <p className="c-1">Ser noiva é viver a alegria de um novo começo, onde cada batida do coração é um passo mais perto de um para sempre sonhado. <br/> E cada detalhe é muito importante para tornar o seu “novo começo” num dia inesquecível. Viver a experiência de nossa consultoria, tornará o processo de escolha do teus acessórios algo prazeroso e assertivo.</p>
-          <ContactButton />
+          <ContactButton message="Olá, vim através do site da Soberana, gostaria de saber sobre os serviços de noiva." />
         </div>
       </div> 
       <div className="art-gallery">
@@ -49,7 +55,7 @@ useEffect(() => {
         <div className="carousel">
             {images.map((image, index) => (
             <div key={index} className="carousel-item">
-                <img src={image} alt={`Imagem ${index + 1}`} />
+                <img src={image} alt={`Imagem ${index + 1}`} loading="lazy"/>
             </div>
             ))}
         </div>

@@ -25,8 +25,14 @@ useEffect(() => {
   };
 }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+const handleVideoClick = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+};
+
+
   return (
-    <div className="main">
+    <div className="main"  onClick={handleVideoClick}>
       <div className="video-container">
         <video className="video-bg" autoPlay muted loop>
           <source src={videoUrl} type="video/mp4" />
@@ -35,10 +41,10 @@ useEffect(() => {
       </div>
       <div className="new-cont">
         <div className="image-bl">
-          <img src={Imagem} alt="Nova Imagem" /> 
+          <img src={Imagem} alt="Nova Imagem" loading="lazy" /> 
           <p className="c-1-title">Ensaio</p>  
           <p className="c-1">Nosso acervo é composto por acessórios das melhores marcas do mercado nacional. <br/> Peças marcantes que ficam maravilhosas em fotos de ensaios corporativas, de gestantes e pré wedding.</p>
-          <ContactButton />
+          <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Ensaios Fotográficos." />
         </div>
       </div>  
       <div className="art-gallery">
@@ -47,7 +53,7 @@ useEffect(() => {
         <div className="carousel">
             {images.map((image, index) => (
             <div key={index} className="carousel-item">
-                <img src={image} alt={`Imagem ${index + 1}`} />
+                <img src={image} alt={`Imagem ${index + 1}`} loading="lazy" />
             </div>
             ))}
         </div>

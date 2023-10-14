@@ -27,9 +27,14 @@ useEffect(() => {
   };
 }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+const handleVideoClick = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+};
+
 
   return (
-    <div className="main">
+    <div className="main"  onClick={handleVideoClick}>
       <div className="video-container">
         <video className="video-bg" autoPlay muted loop>
           <source src={videoUrl} type="video/mp4" />
@@ -38,10 +43,10 @@ useEffect(() => {
       </div>
       <div className="new-cont">
         <div className="image-bl">
-          <img src={Imagem} alt="Nova Imagem" /> 
+          <img src={Imagem} alt="Nova Imagem" loading="lazy" /> 
           <p className="c-1-title">DEBUTANTE</p>  
           <p className="c-1">O aniversário de 15 anos de uma menina é um capítulo inesquecível de sua história, marcando a transição graciosa de sonhos de infância para promessas de amanhã. <br/> Os acessórios complementam na composição do visual que deve ser algo lindo e delicado afinal 15 anos é uma idade lembrada com carinho por todas as mulheres.</p>
-          <ContactButton />
+          <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Debutante." />
         </div>
       </div> 
       <div className="art-gallery">
@@ -50,7 +55,7 @@ useEffect(() => {
         <div className="carousel">
             {images.map((image, index) => (
             <div key={index} className="carousel-item">
-                <img src={image} alt={`Imagem ${index + 1}`} />
+                <img src={image} alt={`Imagem ${index + 1}`} loading="lazy" />
             </div>
             ))}
         </div>
