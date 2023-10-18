@@ -10,7 +10,6 @@ const Footer = () => {
         <ul className="nav-li">
           <li><a href="/">Home</a></li>
           <li><a href="/about">Sobre</a></li>
-          <li><a href="/">Produtos</a></li>
           <li><a href="/contact">Contato</a></li>
         </ul>
       </nav>
