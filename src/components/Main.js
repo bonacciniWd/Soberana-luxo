@@ -20,7 +20,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="main">
+    <div className="main">/
       <div className="video-container">
         <video className="video-bg" autoPlay muted loop playsInline>
           <source src={videoUrl} type="video/mp4" />

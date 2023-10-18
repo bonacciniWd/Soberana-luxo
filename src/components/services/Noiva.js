@@ -27,16 +27,11 @@ useEffect(() => {
   };
 }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-const handleVideoClick = (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-};
-
 
   return (
-    <div className="main"  onClick={handleVideoClick}>
+    <div className="main">
       <div className="video-container">
-        <video className="video-bg" autoPlay muted loop>
+        <video className="video-bg" autoPlay muted loop playsInline>
           <source src={videoUrl} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

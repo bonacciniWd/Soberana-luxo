@@ -3,7 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import './ContactButton.css'; // Importe seu arquivo CSS aqui
 
 const ContactButton = ({ message }) => {
-  const whatsappLink = `https://wa.me/5547997020079?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/554796420304?text=${encodeURIComponent(message)}`;
 
   return (
     <button className='contact-button'>

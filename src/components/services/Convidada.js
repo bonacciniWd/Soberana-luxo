@@ -26,16 +26,12 @@ useEffect(() => {
   };
 }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-const handleVideoClick = (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-};
 
 
   return (
-    <div className="main"  onClick={handleVideoClick}>
+    <div className="main">
       <div className="video-container">
-        <video className="video-bg" autoPlay muted loop>
+        <video className="video-bg" autoPlay muted loop playsInline>
           <source src={videoUrl} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -43,13 +39,13 @@ const handleVideoClick = (e) => {
       <div className="overlay"></div> {/* Add an overlay element */}
       <div className="content">
         <div className="image-bl">
-          <img src={Imagem} alt="Nova Imagem" loading="lazy" /> 
+          <img src={Imagem} alt="Nova Imagem" /> 
           <p className="c-1-title">CONVIDADA</p>  
           <p className="c-1">A vida não tem replay, por isso precisamos contemplar todos os momentos felizes e marcantes de nossas vidas.</p>
           <p className="c-1"> Um evento especial fica marcado para sempre em nossa memória, por isso todos os detalhes são importantes para torná-lo ainda mais inesquecível.</p>
           <p className="c-1">Nossos acessórios trazem beleza e sofisticação ao look, tornando a produção ainda mais linda e memorável.</p>
-          <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Convidada e (ou) Madrinha." />
-        </div> 
+        </div>
+        <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Convidada e (ou) Madrinha." /> 
       </div>  
       <div className="art-gallery">
         <h1 className="text">GALERIA</h1>
