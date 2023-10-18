@@ -1,6 +1,6 @@
 .header {
   background-color: #F6ebda;
-  color: #008000;
+  color: #ffdd00;
   height: 90px;
   width: 100%;
   display: flex;
@@ -48,7 +48,7 @@
 /* Estilização do link de navegação */
 .nav-links a {
   text-decoration: none;
-  color: #517251;
+  color: #ffdd00;
   font-weight: bolder;
   text-transform: uppercase;
   transition: color 0.3s ease; /* Transição suave da cor */
@@ -56,7 +56,7 @@
 }
 
 .nav-links a:hover {
-  color: #ffdd00; /* Cor ao passar o mouse */
+  color:  #008000; /* Cor ao passar o mouse */
 }
 
 /* Adicione um media query para dispositivos menores */
