@@ -37,7 +37,7 @@ useEffect(() => {
       </div>
       <div className="new-cont">
         <div className="image-bl">
-          <img src={Imagem} alt="Nova Imagem" loading="lazy" /> 
+          <img src={Imagem} alt="Nova Imagem" /> 
           <p className="c-1-title">Ensaio</p>  
           <p className="c-1">Nosso acervo é composto por acessórios das melhores marcas do mercado nacional. <br/> Peças marcantes que ficam maravilhosas em fotos de ensaios corporativas, de gestantes e pré wedding.</p>
           <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Ensaios Fotográficos." />
