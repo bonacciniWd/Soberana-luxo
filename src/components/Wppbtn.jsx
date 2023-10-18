@@ -7,7 +7,7 @@ const Wppbtn = () => {
   const message = encodeURIComponent('Olá! vim através do site da Soberana, gostaria de atendimento personalizado 🌟');
 
   // Link para a conversa no WhatsApp com a mensagem personalizada
-  const whatsappLink = `https://wa.me/5547997020079?text=${message}`;
+  const whatsappLink = `https://wa.me/554796420304?text=${message}`;
 
   return (
     <a
