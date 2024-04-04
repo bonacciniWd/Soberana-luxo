@@ -78,14 +78,14 @@ color: #095e09; /* Define a cor verde desejada */
 
 .contact-card {
     /* Estilos gerais do cartão */
-    background-color:  #F6ebda;
+    background-color:  #f6ebdac6;
     padding: 20px;;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 600px; 
     border: 2px solid #ffd700;
-    height: 40dvh;
+    height: auto;
     margin: 0 auto; /* Centralize horizontalmente */
   
 }

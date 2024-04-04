@@ -25,11 +25,6 @@ const Main = () => {
       <div className="contact-container">
         <ContatoCard />
       </div>
-      
-          <div className="foto">
-            <img src={soberana}/>
-          </div>  
-       
     </div>  
   );
 }
