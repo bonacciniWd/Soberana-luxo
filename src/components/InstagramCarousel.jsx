@@ -6,8 +6,8 @@ import "./InstagramCarousel.css";
 const InstagramCarousel = () => {
   // Define os feeds do Instagram
   const instagramFeeds = [
-    "https://www.instagram.com/p/Ck_PhVFO7mf/embed/",
-    "https://www.instagram.com/p/CwIgSvLvh1U/embed/",
+    "https://www.instagram.com/p/C40h8dKOkuo/embed/",
+    "https://www.instagram.com/p/C3_Gc_UiZot/embed/",
     "https://www.instagram.com/p/CyCQmiXJD1H/embed/",
     "https://www.instagram.com/p/CyCGeirJOMa/embed/",
   ];

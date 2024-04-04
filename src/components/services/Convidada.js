@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Convidada.css';
 import videoUrl from '../assets/fundo-soberana.mp4';
-import Imagem from '../assets/Imagem2.png';
+import Imagem from '../assets/Imagem2.jpg';
 import ContactButton from './ContactButton';
 
 import cv1 from '../assets/cv1.jpg';

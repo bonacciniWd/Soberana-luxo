@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Importe o arquivo de estilos para o Footer
-import Bonaccini from '../components/assets/WB.png'
+import Bonaccini from '../components/assets/logo.svg'
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
         </ul>
       </nav>
       <div className="logo-1">
-       <a href="https://bonaccini.vercel.app" target="_blank" rel="noopener noreferrer">
+       <a href="https://vrz-studio.tech" target="_blank" rel="noopener noreferrer">
          <img src={Bonaccini} alt="Logo" />
        </a>
       </div>

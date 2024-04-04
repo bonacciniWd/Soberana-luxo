@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {Tilt} from 'react-tilt'; // Importe o componente Tilt
 import './ImageSection.css'; // Importe o CSS específico para essa seção
-import Imagem from '../components/assets/Imagem.png';
+import Imagem from '../components/assets/Imagem.jpg';
 import Imagem2 from '../components/assets/Imagem2.jpg';
-import Imagem3 from '../components/assets/Imagem2.png';
-import Imagem4 from '../components/assets/Imagem4.png';
-import Imagem5 from '../components/assets/Imagem5.png';
+import Imagem3 from '../components/assets/Imagem2.jpg';
+import Imagem4 from '../components/assets/Imagem4.jpg';
+import Imagem5 from '../components/assets/Imagem5.jpg';
 
 const ImageSection = () => {
   return (
