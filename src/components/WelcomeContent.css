@@ -17,6 +17,7 @@
   .p {
     color: antiquewhite;
     font-size: 26px;
+    font-weight: 500;
     margin-left: 13%;
     margin-right: 13%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
@@ -42,5 +43,6 @@
     .p {
       color: antiquewhite;
       font-size: 16px;
+      font-weight: 500;
     }
 }
