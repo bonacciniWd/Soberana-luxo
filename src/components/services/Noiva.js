@@ -41,7 +41,7 @@ useEffect(() => {
           <img src={Imagem} alt="Nova Imagem"  /> 
           <p className="c-1-title">NOIVA</p>  
           <p className="c-1">Ser noiva é viver a alegria de um novo começo, onde cada batida do coração é um passo mais perto de um para sempre sonhado. <br/> E cada detalhe é muito importante para tornar o seu “novo começo” num dia inesquecível. Viver a experiência de nossa consultoria, tornará o processo de escolha do teus acessórios algo prazeroso e assertivo.</p>
-          <ContactButton message="Olá, vim através do site da Soberana, gostaria de saber sobre os serviços de noiva." />
+          <ContactButton message="Gostaria de mais informações sobre serviços de locação para acessórios de Noiva." />
         </div>
       </div> 
       <div className="art-gallery">

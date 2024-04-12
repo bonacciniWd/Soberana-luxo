@@ -42,7 +42,7 @@ useEffect(() => {
           <img src={Imagem} alt="Nova Imagem" /> 
           <p className="c-1-title">DEBUTANTE</p>  
           <p className="c-1">O aniversário de 15 anos de uma menina é um capítulo inesquecível de sua história, marcando a transição graciosa de sonhos de infância para promessas de amanhã. <br/> Os acessórios complementam na composição do visual que deve ser algo lindo e delicado afinal 15 anos é uma idade lembrada com carinho por todas as mulheres.</p>
-          <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Debutante." />
+          <ContactButton message="Gostaria de mais informações sobre serviços de locação para acessórios de Debutante." />
         </div>
       </div> 
       <div className="art-gallery">

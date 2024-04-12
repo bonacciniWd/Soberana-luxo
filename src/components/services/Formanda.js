@@ -43,7 +43,7 @@ useEffect(() => {
           <img src={Imagem} alt="Nova Imagem" /> 
           <p className="c-1-title">Formanda</p>  
           <p className="c-1">Sabemos que a Formatura é um março significativo na sua vida profissional, é um momento de celebração e reconhecido de todo o esforço e dedicação ao longo dos últimos anos. <br/> Acreditamos que os detalhes fazem toda a diferença em ocasiões tão memoráveis, por isso oferecemos um seleção exclusiva de acessórios elegantes e sofisticados, perfeitos para realçar a sua beleza e completar seus looks de formatura.</p>
-          <ContactButton message="Olá, vim através do site da Soberana, gostaria de mais informações sobre os serviços voltados à formaturas." />
+          <ContactButton message="Gostaria de mais informações sobre serviços de locação para acessórios para Fomaturas e eventos." />
         </div>
       </div>  
       <div className="art-gallery">

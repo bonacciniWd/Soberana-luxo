@@ -45,7 +45,7 @@ useEffect(() => {
           <p className="c-1"> Um evento especial fica marcado para sempre em nossa memória, por isso todos os detalhes são importantes para torná-lo ainda mais inesquecível.</p>
           <p className="c-1">Nossos acessórios trazem beleza e sofisticação ao look, tornando a produção ainda mais linda e memorável.</p>
         </div>
-        <ContactButton message="Olá! eu vim através do site da Soberana, e gostaria de mais informações sobre os serviços de Convidada e (ou) Madrinha." /> 
+        <ContactButton message="Gostaria de mais informações sobre serviços de locação para acessórios de Convidada e Madrinha." /> 
       </div>  
       <div className="art-gallery">
         <h1 className="text">GALERIA</h1>
